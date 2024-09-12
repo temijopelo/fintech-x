@@ -19,51 +19,58 @@
 
     <!-- link to font awesome -->
     <script src="https://kit.fontawesome.com/77b49a01e6.js" crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <div class="top">
-        <div class="fixed">
-            <div class="nav">
-                <div class="logo"><img src="img/logo.svg" alt="logo"></div>
-                <div class="nav-links">
-                    <ul>
-                        <li><a class="outline" href="#">Home</a></li>
-                        <li><a class="outline" href="#">About</a></li>
-                        <li><a class="outline" href="#">Features</a></li>
-                        <li><a class="outline" href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
-                        <li><a class="outline" href="#">Cart(0)</a></li>
+    <div class="bg-black text-white">
+        <div class="">
+            <div class="flex flex-row md:w-[75%] md:m-auto justify-between items-center md:py-10 p-3">
+                <div class="w-24 md:w-32"><img src="img/logo.svg" alt="logo"></div>
+                <div class="nav-links ">
+                    <ul class="md:flex gap-10 hidden">
+                        <li><a class="" href="#">Home</a></li>
+                        <li><a class="" href="#">About</a></li>
+                        <li><a class="" href="#">Features</a></li>
+                        <li><a class="" href="#">Pages <i class="fa-solid fa-angle-down"></i></a></li>
+                        <li><a class="" href="#">Cart(0)</a></li>
                     </ul>
                 </div>
-                <div class="nav-btn">
-                    <a class="btn outline" href="#">Log in <i
+                <div class="flex gap-4 items-center">
+                    <a class="btn hidden md:inline" href="#">Log in <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    <a class="btn blue" href="#">Get started <i
+                    <a class="md:p-4 p-2 bg-blue-700 rounded-full  hover:bg-white hover:text-blue-700" href="#">Get started <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
                 </div>
             </div>
         </div>
 
-        <div class="homepage">
-            <div class="text_heading">
-                <h1>Meet the next gen banking</h1>
-                <p>Welcome to the future of banking! Experience innovation and seamless financial solutions with our
-                    next-gen platform.
-                    Elevate your banking experience with cutting-edge technology and personalized services. Join us
-                    today!</p>
+        <div class="flex flex-wrap md:w-[75%] md:m-auto md:items-center">
+            <div class="md:w-[50%] flex flex-col justify-center items-center md:gap-10">
+                <div class="p-2 text_heading">
+                    <h1 class="md:text-6xl w-screen text-3xl font-semibold py-5 md:w-[30rem]" >Meet the next gen banking</h1>
+                    <p class="opacity-55 leading-normal md:py-5">Welcome to the future of banking! Experience innovation and seamless financial solutions with our
+                        next-gen platform.
+                        Elevate your banking experience with cutting-edge technology and personalized services. Join us
+                        today!</p>
+                    <div class=" flex justify-center py-10">
+                        <a class="border-2 text-sm border-transparent p-2 md:px-10 md:py-4 bg-blue-700 rounded-full mr-3 hover:bg-white hover:text-blue-700" href="#">Get Started <i class="ml-3 fa-solid fa-arrow-up-right-from-square"></i></a>
+                        <a class="border-2 text-sm border-white p-2 md:px-10 md:py-4 rounded-full hover:border-transparent hover:bg-blue-700" href="#">Contact Sales <i
+                                class="ml-3 fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="md:flex hidden justify-center items-center border-2 border-white rounded-full w-16 h-16 md:mt-24">
+                    <a class="" href="#third"><i class="fa-solid fa-arrow-down-long"></i></a>
+                </div>
+            </div>
+            <div class="w-screen">
+                <img class="w-full md:w-[700px]" src="img/6115be3a2ab1a50af2b8708d_credit-cards-bank-x-webflow-template.png" alt="" srcset=""
+                    >
+            </div>
 
-                <a class="btn-long blue" href="#">Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                <a class="btn-long outline-border" href="#">Contact Sales <i
-                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </div>
-            <div class="aside_img">
-                <img src="img/6115be3a2ab1a50af2b8708d_credit-cards-bank-x-webflow-template.png" alt="" srcset=""
-                    width="700px">
-            </div>
-
-            <div class="drop_icon">
-                <a href="#third"><i class="fa-solid fa-arrow-down-long"></i></a>
-            </div>
+           
         </div>
     </div>
 
@@ -72,14 +79,14 @@
 
     <div class="second_layer">
 
-        <div class="image_bg">
-            <ul class="image_list">
-                <li class="one"><img src="img/agency-logo.svg" alt=""></li>
-                <li class="two"><img src="img/app-logo.svg" alt=""></li>
-                <li class="three"><img src="img/business-logo.svg" alt=""></li>
-                <li class="four"><img src="img/company-logo.svg" alt=""></li>
-                <li class="five"><img src="img/enterprise-logo.svg" alt=""></li>
-                <li class="six"><img src="img/institute-logo.svg" alt=""></li>
+        <div class="bg-gray-200">
+            <ul class="flex flex-wrap p-14 items-center justify-center w-[65%]  m-auto">
+                <li class="p-6 "><img src="img/agency-logo.svg" alt=""></li>
+                <li class="p-6"><img src="img/app-logo.svg" alt=""></li>
+                <li class="p-6"><img src="img/business-logo.svg" alt=""></li>
+                <li class="p-6"><img src="img/company-logo.svg" alt=""></li>
+                <li class="p-6"><img src="img/enterprise-logo.svg" alt=""></li>
+                <li class="p-6"><img src="img/institute-logo.svg" alt=""></li>
             </ul>
         </div>
     </div>
@@ -88,73 +95,85 @@
     <!-- third layer  -->
 
 
-    <div class="third-layer" id="third">
-        <div class="bits">
-            <hr class="shorts">
-            <h2>Browse our set of banking services and offerings</h2>
-            <a class="btn-long black" href="#">Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a class="btn-long outline-border" href=" #">Browse Features <i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <div class="flex flex-wrap md:w-[75%] md:m-auto justify-between py-10 md:py-32" id="third">
+        <div class="md:w-[35%] md:mr-10 md:mb-10 p-2">
+            <hr class="w-32 border-[1.5px] border-black">
+            <h2 class="text-4xl font-medium w-[90%] py-10">Browse our set of banking services and offerings</h2>
+            <div class="py-5">
+                <a class="bg-black border-transparent py-4 px-8 text-white rounded-full" href="#">Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="border-2 border-black py-4 px-8 rounded-full" href=" #">Browse Features <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
 
-        <div class="checks checks-one">
-            <hr class="check-shorts">
-            <h3>Checking Accounts</h3>
-            <p>Secure and Convenient Checking Accounts. Manage your finances effortlessly with our reliable and
-                accessible banking
-                services.</p>
+        <div class="py-10 px-14 md:w-[30%] checks-one flex flex-col gap-32">
+            <div>
+                <hr class="w-[20%] border-[1.5px] border-black ">
+                <h3 class="py-5 font-medium text-lg" >Checking Accounts</h3>
+                <p class="opacity-70 leading-relaxed">Secure and Convenient Checking Accounts. Manage your finances effortlessly with our reliable and
+                    accessible banking
+                    services.</p>
+            </div>
 
 
-            <div class="drop_icon">
+            <div class="flex justify-center items-center self-end p-4 w-20 h-20 bg-black text-white rounded-full">
                 <i class="fa-solid fa-angles-right"></i>
 
             </div>
         </div>
-        <div class="checks checks-two">
-            <hr class="check-shorts">
-            <h3>Credit Cards</h3>
-            <p>Empower Your Purchases with Our Credit Card. Rewards, convenience, and security in every transaction.
-                Apply today</p>
+        <div class="py-10 px-14 md:w-[30%] checks-two flex flex-col gap-32">
+            <div>
+                <hr class="w-[20%] border-[1.5px] border-black">
+                <h3 class="py-5 font-medium text-lg">Credit Cards</h3>
+                <p class="opacity-70 leading-relaxed">Empower Your Purchases with Our Credit Card. Rewards, convenience, and security in every transaction.
+                    Apply today</p>
+            </div>
 
 
-            <div class="drop_icon">
+            <div class="flex justify-center items-center self-end p-4 w-20 h-20 bg-black text-white rounded-full">
                 <i class="fa-solid fa-angles-right"></i>
 
             </div>
         </div>
-        <div class="checks checks-three">
-            <hr class="check-shorts">
-            <h3>Investments</h3>
-            <p>Grow Your Wealth with Smart Investments. Explore opportunities tailored to your financial goals and
-                aspirations.</p>
+        <div class="py-10 px-14 md:w-[30%] checks-three flex flex-col gap-32">
+            <div>
+                <hr class="w-[20%] border-[1.5px] border-black">
+                <h3 class="py-5 font-medium text-lg">Investments</h3>
+                <p class="opacity-70 leading-relaxed">Grow Your Wealth with Smart Investments. Explore opportunities tailored to your financial goals and
+                    aspirations.</p>
+            </div>
 
 
-            <div class="drop_icon">
+            <div class="flex justify-center items-center self-end p-4 w-20 h-20 bg-black text-white rounded-full">
                 <i class="fa-solid fa-angles-right"></i>
 
             </div>
         </div>
-        <div class="checks checks-four">
-            <hr class="check-shorts">
-            <h3>Wealth Management</h3>
-            <p>Strategic Wealth Management for Prosperous Futures. Tailored solutions, expert advice to optimize,
-                protect, and grow
-                wealth.</p>
+        <div class="py-10 px-14 md:w-[30%] checks-four flex flex-col gap-32">
+            <div>
+                <hr class="w-[20%] border-[1.5px] border-black">
+                <h3 class="py-5 font-medium text-lg">Wealth Management</h3>
+                <p class="opacity-70 leading-relaxed">Strategic Wealth Management for Prosperous Futures. Tailored solutions, expert advice to optimize,
+                    protect, and grow
+                    wealth.</p>
+            </div>
 
 
-            <div class="drop_icon">
+            <div class="flex justify-center items-center self-end p-4 w-20 h-20 bg-black text-white rounded-full">
                 <i class="fa-solid fa-angles-right"></i>
 
             </div>
         </div>
-        <div class="checks checks-five">
-            <hr class="check-shorts">
-            <h3>Loans and Credits</h3>
-            <p>Flexible Loans and Credit Solutions. Access funds easily with competitive rates and personalized options.
-            </p>
+        <div class="py-10 px-14 md:w-[30%] checks-five flex flex-col gap-32 hover:bg-black hover:text-white">
+            <div>
+                <hr class="w-[20%] border-[1.5px] border-black">
+                <h3 class="py-5 font-medium text-lg">Loans and Credits</h3>
+                <p class="opacity-70 leading-relaxed">Flexible Loans and Credit Solutions. Access funds easily with competitive rates and personalized options.
+                </p>
+            </div>
 
 
-            <div class="drop_icon">
+            <div class="flex justify-center items-center self-end p-4 w-20 h-20 bg-black text-white rounded-full hover:bg-blue-700">
                 <i class="fa-solid fa-angles-right"></i>
 
             </div>
@@ -164,25 +183,27 @@
 
     <!-- fourth-layer -->
 
-    <div class="fourth-layer">
-        <div class="top-four">
-            <div class="text4">
-                <hr class="shorts">
-                <h2>A bank account that grows with you</h2>
-                <p>Experience financial growth with our dynamic bank account. Tailored for your journey, it offers
+    <div class="bg-gray-200">
+        <div class="flex flex-wrap md:w-[75%] md:m-auto items-center relative md:py-24">
+            <div class="md:w-[40%] md:pr-24 p-10">
+                <hr class="w-32 border-[1.5px] border-black">
+                <h2 class="text-4xl font-semibold leading-normal py-5">A bank account that grows with you</h2>
+                <p class="opacity-75 leading-normal text-base py-5">Experience financial growth with our dynamic bank account. Tailored for your journey, it offers
                     competitive features,
-                    security, and personalized services. Your financial evolution starts here.</p>
-                <hr>
-                <p>Discover a bank account designed for your journey. Grow your savings with flexible features,
+                    security, and personalized services. Your financial evolution starts here.
+                </p>
+               
+                <hr class="w-full border-[1px] border-black opacity-25">
+                <p class="opacity-75 leading-normal text-base py-5">Discover a bank account designed for your journey. Grow your savings with flexible features,
                     personalized services, and
                     innovative tools tailored to your evolving financial needs.</p>
 
-                <div class="text4-btn"><a class="btn-long black" href="#">Get Started <i
+                <div class="py-4 px-7 bg-black text-white rounded-full inline-block my-7"><a class="btn-long black" href="#">Get Started <i
                             class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
             </div>
 
-            <div class="image">
-                <div class="img1"><img
+            <div class="m-auto">
+                <div class="hidden md:absolute top-[200px] left-[400px]"><img
                         src="img/6115d3a47653f8ac6def861d_bank-growth-illustration-bank-x-webflow-template.png" alt=""
                         width="300px">
                 </div>
@@ -194,37 +215,37 @@
 
     <!-- fifth-layer -->
 
-    <div class="fifth-layer">
-        <div class="image5">
-            <img src="img/image4.jpeg" alt="" width="500px">
+    <div class="md:w-[75%] md:m-auto md:py-32 flex flex-wrap items-center gap-10">
+        <div class="md:w-[50%]">
+            <img src="img/image4.jpeg" alt="" >
         </div>
 
-        <div class="text5">
+        <div class="md:w-[40%] p-5">
             <div class="top5">
-                <hr class="shorts">
-                <h2>What makes us stand out from the rest?</h2>
+                <hr class="w-32 border-[1.5px] border-black">
+                <h2 class="text-4xl font-semibold leading-normal py-5 w-[60%]">What makes us stand out from the rest?</h2>
             </div>
-            <div class="bits-five">
-                <div class="bits-container bits-five-one">
-                    <h3>Innovation</h3>
-                    <p>Innovation fuels progress. Embrace change, stay ahead. Unlock possibilities with cutting-edge
+            <div class="flex flex-wrap gap-3">
+                <div class="md:w-[45%]">
+                    <h3 class="font-bold text-lg py-3">Innovation</h3>
+                    <p class=" ">Innovation fuels progress. Embrace change, stay ahead. Unlock possibilities with cutting-edge
                         solutions for a brighter
                         future.</p>
                 </div>
-                <div class="bits-container bits-five-two">
-                    <h3>Security</h3>
-                    <p>Security is paramount. Safeguard your assets with advanced measures. Trust, protect, and ensure
+                <div class="md:w-[45%] ">
+                    <h3 class="font-bold text-lg py-3">Security</h3>
+                    <p class="">Security is paramount. Safeguard your assets with advanced measures. Trust, protect, and ensure
                         peace of mind.</p>
                 </div>
-                <div class="bits-container bits-five-three">
-                    <h3>Technology</h3>
-                    <p>Technology transforms. Embrace digital advancements. Streamline processes, enhance experiences,
+                <div class="md:w-[45%] ">
+                    <h3 class="font-bold text-lg py-3">Technology</h3>
+                    <p class="">Technology transforms. Embrace digital advancements. Streamline processes, enhance experiences,
                         and propel growth into
                         the future.</p>
                 </div>
-                <div class="bits-container bits-five-four">
-                    <h3>Services</h3>
-                    <p>Service excellence defines us. Dedicated support, personalized solutions. Elevate your
+                <div class="md:w-[45%] ">
+                    <h3 class="font-bold text-lg py-3">Services</h3>
+                    <p class="">Service excellence defines us. Dedicated support, personalized solutions. Elevate your
                         experience with a commitment to
                         your satisfaction.</p>
                 </div>
@@ -236,189 +257,197 @@
 
     <!-- sixth-layer -->
 
-    <div class="sixth-layer">
-        <hr class="shorts">
-        <h2>Our impact in numbers</h2>
-
-        <div class="mini-container">
-            <div class="mini mini-one">
-                <h3>800<span>K</span></h3>
-                <h4>Cutomers</h4>
-                <p>800k strong, unified community. Diverse, empowered, connected. Together, we thrive.</p>
+    <div class="bg-gray-200 ">
+        <div class="md:w-[75%] md:m-auto md:py-24 p-5 md:p-0">
+            <hr class="w-32 m-auto border-[1.5px] border-black">
+            <h2 class="text-center text-3xl font-semibold md:py-10 py-5">Our impact in numbers</h2>
+            <div class="flex flex-wrap  gap-2 md:gap-0 text-center py-5 md:justify-between md:items-center md:text-center md:py-16">
+                <div class="md:w-[30%] mini-one">
+                    <h3 class="text-2xl font-semibold">800<span>K</span></h3>
+                    <h4 class="text-xl font-medium md:p-4">Cutomers</h4>
+                    <p class="md:w-[60%] md:m-auto opacity-70">800k strong, unified community. Diverse, empowered, connected. Together, we thrive.</p>
+                </div>
+                <div class="md:w-[30%] mini-two">
+                    <h3 class="text-2xl font-semibold">99<span>%</span></h3>
+                    <h4 class="text-xl font-medium md:p-4">Cutomers satisfaction</h4>
+                    <p class="md:w-[60%] md:m-auto opacity-70">Excellence in service. Your contentment is our priority.</p>
+                </div>
+                <div class="md:w-[30%] mini-three">
+                    <h3 class="text-2xl font-semibold">250<span>B</span></h3>
+                    <h4 class="text-xl font-medium md:p-4">Money Managed</h4>
+                    <p class="md:w-[60%] md:m-auto opacity-70">Financial expertise, trust. Your wealth, our commitment, unparalleled results.</p>
+                </div>
             </div>
-            <div class="mini mini-two">
-                <h3>99<span>%</span></h3>
-                <h4>Cutomers satisfaction</h4>
-                <p>Excellence in service. Your contentment is our priority.</p>
+            <div class="m-auto w-[80%]">
+                <iframe class="w-full md:h-screen "   src="https://www.youtube.com/embed/2UCNVQmX9qs"
+                    title="No Code Conf 2019 opening keynote | Vlad Magdalin | No Code Conf" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
             </div>
-            <div class="mini mini-three">
-                <h3>250<span>B</span></h3>
-                <h4>Money Managed</h4>
-                <p>Financial expertise, trust. Your wealth, our commitment, unparalleled results.</p>
+            <div class="flex justify-center items-center gap-5 py-10">
+                <a class="bg-black border-transparent text-white py-4 px-7 rounded-full hover:bg-blue-700" href="#">Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <a class="border-2 border-black py-4 px-7 rounded-full hover:bg-blue-700 hover:border-transparent hover:text-white" href="#">Browse Features <i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
             </div>
-        </div>
-
-        <div class="video">
-            <iframe width="940" height="528" src="https://www.youtube.com/embed/2UCNVQmX9qs"
-                title="No Code Conf 2019 opening keynote | Vlad Magdalin | No Code Conf" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </div>
-
-
-        <div class="sixth-layer-btn">
-            <a class="btn-long black" href="#">Get Started <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            <a class="btn-long outline-border" href="#">Browse Features <i
-                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
     </div>
 
     <!-- seventh-layer  -->
 
-    <div class="seventh-layer">
-        <h2>Frequently Asked Questions</h2>
-
-        <div class="seventh-btn">
-            <a class="btn-long black" href="#">Contact Us <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <div class="w-[75%] m-auto py-24">
+        <div class="flex justify-between items-center py-9">
+            <h2 class="border-l-2 border-black text-4xl font-bold pl-5">Frequently Asked Questions</h2>
+            <div class="bg-black px-7 py-4 text-white rounded-full hidden md:inline-block">
+                <a class="" href="#">Contact Us <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
 
         <hr>
 
-        <div class="text7">
-            <p><span>01</span>What banks are you currently partnered with? <i class="fa-solid fa-arrow-right"></i></p>
-        </div>
-        <hr>
-
-        <div class="text7">
-            <p><span>02</span>How long has Fintech X been in business for? <i class="fa-solid fa-arrow-right"></i></p>
-        </div>
-        <hr>
-
-        <div class="text7">
-            <p><span>03</span>What are your current banking security standards? <i class="fa-solid fa-arrow-right"></i>
+        <div class="flex justify-between items-center p-12">
+            <p><span class="text-blue-700 mr-4">01</span>What banks are you currently partnered with? 
             </p>
+            <i class="fa-solid fa-arrow-right"></i>
+
         </div>
         <hr>
 
-        <div class="text7">
-            <p><span>04</span>Can I speak with an account executive? <i class="fa-solid fa-arrow-right"></i></p>
+        <div class="flex justify-between items-center p-12">
+            <p><span class="text-blue-700 mr-4">02</span>How long has Fintech X been in business for? </p>
+            <i class="fa-solid fa-arrow-right"></i>
         </div>
+        <hr>
+
+        <div class="flex justify-between items-center p-12">
+            <p><span class="text-blue-700 mr-4">03</span>What are your current banking security standards? 
+            </p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+        <hr>
+
+        <div class="flex justify-between items-center p-12">
+            <p><span class="text-blue-700 mr-4">04</span>Can I speak with an account executive? </p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <hr>
     </div>
 
 
+    <footer class="bg-black text-white ">
+
+        <div class="md:w-[75%] md:m-auto md:py-24 p-5">
+            <div class="flex flex-wrap md:justify-between md:items-center py-7">
+                <div class="md:w-[40%]">
+                    <img src="img/logo.svg" alt="">
+                    <p class="md:w-[80%] py-5 opacity-75">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, ipsam ex omnis porro rem vero </p>
+                </div>
+                <div class="flex justify-between items-center heading-two">
+                    <h3 class="w-64  md:text-3xl">Open a free account today</h3>
+                    <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <div class="flex justify-between items-center heading-three">
+                    <h3 class="w-64 md:text-3xl">Contact a sales executive</h3>
+                    <i class="fa-solid fa-location-arrow"></i>
+                </div>
+                <hr>
+            </div>
+
+            <hr class="opacity-70">
+
+            <div class="py-10">
+                <div class="flex flex-wrap justify-evenly">
+                    <div class="footer-list-one">
+                        <h4 class="opacity-65 text-xl py-7">PAGES</h4>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="" href="">Home v1</a></li>
+                            <li><a class="" href="">Home v2</a></li>
+                            <li><a class="" href="">Home v3</a></li>
+                            <li><a class="" href="">Home v4</a></li>
+                            <li><a class="" href="">About</a></li>
+                            <li><a class="" href="">Features</a></li>
+                            <li><a class="" href="">Careers</a></li>
+                            <li><a class="" href="">Career Single</a></li>
+                            <li><a class="" href="">Blog v1</a></li>
+                            <li><a class="" href="">Blog v2</a></li>
+                            <li><a class="" href="">Blog v3</a></li>
+                            <li><a class="" href="">Blog Post</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-two">
+                        <h4 class="opacity-65 text-xl py-11"></h4>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="" href="">Team</a></li>
+                            <li><a class="" href="">Team Member</a></li>
+                            <li><a class="" href="">Contact v1</a></li>
+                            <li><a class="" href="">Contact v2</a></li>
+                            <li><a class="" href="">Contact v3</a></li>
+                            <li><a class="" href="">Pricing</a></li>
+                            <li><a class="" href="">Pricing Single</a></li>
+                            <li><a class="" href="">Schedule a Demo</a></li>
+                            <li><a class="" href="">Help Center</a></li>
+                            <li><a class="" href="">Help Category</a></li>
+                            <li><a class="" href="">Help Category Single</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-three">
+                        <h4 class="opacity-65 text-xl py-7">UTILITY PAGES</h4>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="" href="">Coming Soon</a></li>
+                            <li><a class="" href="">Sign in</a></li>
+                            <li><a class="" href="">Sign Up</a></li>
+                            <li><a class="" href="">Forgot Password</a></li>
+                            <li><a class="" href="">Email Confirmation</a></li>
+                            <li><a class="" href="">Terms & Condition</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-list-four">
+                        <h4 class="opacity-65 text-xl py-7">SYSTEM PAGES</h4>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="" href="">Start Here</a></li>
+                            <li><a class="" href="">Styleguide</a></li>
+                            <li><a class="" href="">Password Protected</a></li>
+                            <li><a class="" href="">404 Not Found</a></li>
+                            <li><a class="" href="">Licenses</a></li>
+                            <li><a class="" href="">Changelog</a></li>
+                        </ul>
+                        
+                        <div class="border-b-2 border-blue-700 text-blue-700 py-2 mt-2 font-bold">
+                            <a href="">Browse More Templates</a>
+                        </div>
+                    </div>
+                    <div class="footer-list-five">
+                        <h4 class="opacity-65 text-xl py-7">FOLLOW US</h4>
+                        <ul class="flex flex-col gap-3">
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-facebook-f"></i> Facebook</a></li>
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-twitter"></i> Twitter</a></li>
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-instagram"></i> Instagram</a></li>
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-linkedin-in"></i> Linkedin</a></li>
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-youtube"></i> Youtube</a></li>
+                            <li><a class="" href=""><i class="fa-brands mr-3 fa-whatsapp"></i> Whatsapp</a></li>
+                        </ul>
+                    </div>
+                    
+
+                    <hr>
+
+                    </div>
+                        <div class="text-center pt-32">
+                            <p>Copyright © Fintech X | Designed by <a class="bottom-link " href="#">BRIX Templates</a> - Powered by
+                                <a class="bottom-link " href="#">Webflow</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        
+    </footer>
+    
+    
 
 </body>
 
+</html>
 
 <!-- footer section  -->
-
-<footer>
-
-    <div class="top-footer">
-        <div class="footer-top-heading heading-one">
-            <img src="img/logo.svg" alt="">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, ipsam ex omnis porro rem vero </p>
-        </div>
-
-        <div class="footer-top-heading heading-two">
-            <h3>Open a free account today</h3>
-            <i class="fa-solid fa-location-arrow"></i>
-        </div>
-        <div class="footer-top-heading heading-three">
-            <h3>Contact a sales executive</h3>
-            <i class="fa-solid fa-location-arrow"></i>
-        </div>
-
-        <hr>
-    </div>
-
-
-    <div class="footer-lists">
-        <div class="footer-list-one">
-            <h4>PAGES</h4>
-            <ul>
-                <li><a class="outline" href="">Home v1</a></li>
-                <li><a class="outline" href="">Home v2</a></li>
-                <li><a class="outline" href="">Home v3</a></li>
-                <li><a class="outline" href="">Home v4</a></li>
-                <li><a class="outline" href="">About</a></li>
-                <li><a class="outline" href="">Features</a></li>
-                <li><a class="outline" href="">Careers</a></li>
-                <li><a class="outline" href="">Career Single</a></li>
-                <li><a class="outline" href="">Blog v1</a></li>
-                <li><a class="outline" href="">Blog v2</a></li>
-                <li><a class="outline" href="">Blog v3</a></li>
-                <li><a class="outline" href="">Blog Post</a></li>
-            </ul>
-        </div>
-
-        <div class="footer-list-two">
-            <ul>
-                <li><a class="outline" href="">Team</a></li>
-                <li><a class="outline" href="">Team Member</a></li>
-                <li><a class="outline" href="">Contact v1</a></li>
-                <li><a class="outline" href="">Contact v2</a></li>
-                <li><a class="outline" href="">Contact v3</a></li>
-                <li><a class="outline" href="">Pricing</a></li>
-                <li><a class="outline" href="">Pricing Single</a></li>
-                <li><a class="outline" href="">Schedule a Demo</a></li>
-                <li><a class="outline" href="">Help Center</a></li>
-                <li><a class="outline" href="">Help Category</a></li>
-                <li><a class="outline" href="">Help Category Single</a></li>
-            </ul>
-        </div>
-
-
-        <div class="footer-list-three">
-            <h4>UTILITY PAGES</h4>
-            <ul>
-                <li><a class="outline" href="">Coming Soon</a></li>
-                <li><a class="outline" href="">Sign in</a></li>
-                <li><a class="outline" href="">Sign Up</a></li>
-                <li><a class="outline" href="">Forgot Password</a></li>
-                <li><a class="outline" href="">Email Confirmation</a></li>
-                <li><a class="outline" href="">Terms & Condition</a></li>
-            </ul>
-        </div>
-
-
-        <div class="footer-list-four">
-            <h4>SYSTEM PAGES</h4>
-            <ul>
-                <li><a class="outline" href="">Start Here</a></li>
-                <li><a class="outline" href="">Styleguide</a></li>
-                <li><a class="outline" href="">Password Protected</a></li>
-                <li><a class="outline" href="">404 Not Found</a></li>
-                <li><a class="outline" href="">Licenses</a></li>
-                <li><a class="outline" href="">Changelog</a></li>
-            </ul>
-
-            <div class="clickable"><a href="">Browse More Templates</a></div>
-        </div>
-
-
-        <div class="footer-list-five">
-            <h4>FOLLOW US</h4>
-            <ul>
-                <li><a class="outline" href=""><i class="fa-brands fa-facebook-f"></i> Facebook</a></li>
-                <li><a class="outline" href=""><i class="fa-brands fa-twitter"></i> Twitter</a></li>
-                <li><a class="outline" href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                <li><a class="outline" href=""><i class="fa-brands fa-linkedin-in"></i> Linkedin</a></li>
-                <li><a class="outline" href=""><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-                <li><a class="outline" href=""><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
-            </ul>
-        </div>
-
-
-        <hr>
-
-    </div>
-
-    <div class="footer-bottom">
-        <p>Copyright © Fintech X | Designed by <a class="bottom-link outline" href="#">BRIX Templates</a> - Powered by
-            <a class="bottom-link outline" href="#">Webflow</a>
-        </p>
-    </div>
-</footer>
-
-</html>
